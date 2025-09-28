@@ -193,12 +193,6 @@
 >
 > **Justification**
 
-# Conclusion
-
-> **Free-Form Visualization**
->
-> (Not applicable in this project)
-
 # Reflection
 
 > The project is entirely meaningful as it provides such an opportunity
