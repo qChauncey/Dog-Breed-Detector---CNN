@@ -1,12 +1,10 @@
----
-title: Machine Learning Engineer Nanodegree
----
-
 # Definition Project Overview
 
 > This project is to solve the dog breed classification problem by
 > creating CNN (Convolutional Neural Network) models as the detectors.
->
+> 
+><img width="710" height="67" alt="image" src="https://github.com/user-attachments/assets/e034d0bf-4bc3-4cb1-9c09-fab92db5433e" />
+
 > (Graph 1: Basic Flowchart)
 >
 > Above is the basic flowchart of the solution that will be provided.
@@ -48,8 +46,8 @@ title: Machine Learning Engineer Nanodegree
 > exploratory visualization, but one of the images as below for
 > reference.
 
-![](media/image1.jpeg){width="2.2816480752405948in"
-height="2.3854166666666665in"}
+<img width="342" height="357" alt="image" src="https://github.com/user-attachments/assets/02d58696-32f0-4645-980e-a318681cd898" />
+
 
 > （Image 1: Example of 1 human image from the dataset）
 
@@ -81,28 +79,18 @@ height="2.3854166666666665in"}
 > OpenCV and Torchvision are two popular libraries available, with
 > several functions aiming to decode the image into data for the
 > algorithm to read.
->
-> (Graph 2: Flowchart for OpenCV Human Face Detector)
+
 >
 > For dog identification and breeds classification, the "*Transform*"
 > function provided in the *Torchvision* project is applied for image
 > pre-process and normalization.
 
-+-------------------------------------+--------------------------------+
-| **Function**                        | **Description**                |
-+=====================================+================================+
-| Resize()/CenterCrop()               | To resize and unify image size |
-|                                     | to                             |
-|                                     |                                |
-|                                     | avoid any error                |
-+-------------------------------------+--------------------------------+
-| To.Tensor()                         | Change to Tensor format        |
-+-------------------------------------+--------------------------------+
-| > Normalize (mean=\[0.485, 0.456,   | > Normalization, the parameter |
-| > 0.406\],                          | > is recommended by Pytorch    |
-| >                                   |                                |
-| > std=\[0.229, 0.224, 0.225\])      |                                |
-+-------------------------------------+--------------------------------+
+| Function                           | Description                                         |
+|------------------------------------|-----------------------------------------------------|
+| Resize()/CenterCrop()              | To resize and unify image size to avoid any error   |
+| To.Tensor()                        | Change to Tensor format                             |
+| Normalize (mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]) | Normalization, the parameter is recommended by Pytorch |
+
 
 > (Table 1: Torchvision method for image transform and pre-process)
 
@@ -169,9 +157,8 @@ height="2.3854166666666665in"}
 
 > As a result, the model identified 100% dog images as required.
 >
-> ![文本 中度可信度描述已自动生成](media/image2.png){width="0.975in"
-> height="0.408332239720035in"}
->
+><img width="146" height="61" alt="image" src="https://github.com/user-attachments/assets/c2a1633b-7899-4d57-9eee-9e7609096e76" />
+
 > (Image2: Result of VGG16 model)
 
 ## Scratch Model
@@ -180,8 +167,7 @@ height="2.3854166666666665in"}
 > 4.09 and finally identified 86 out of 825 pictures, with more than 10%
 > accuracy.
 
-![](media/image3.png){width="1.950945975503062in"
-height="0.6416666666666667in"}
+<img width="292" height="97" alt="image" src="https://github.com/user-attachments/assets/34e75d03-5cd0-401b-a7c2-111bd23ed1d0" />
 
 > (Image 3: Result of Scratch model)
 
@@ -190,7 +176,7 @@ height="0.6416666666666667in"}
 > As a result, the transfer learning model identified 512 out of 836
 > pictures, which is 61% accuracy that meets the expectation.
 
-![](media/image4.png){width="2.018733595800525in" height="0.65in"}
+<img width="303" height="97" alt="image" src="https://github.com/user-attachments/assets/547bbd7c-82b5-45f1-beaa-775c988c17a7" />
 
 > （Image 4: Result of Transfer Learning model）
 
@@ -200,8 +186,8 @@ height="0.6416666666666667in"}
 > 3 human images. The tools successfully identify all human and dogs
 > images, and classify the dog breeds correctly.
 
-![](media/image5.png){width="1.608332239720035in"
-height="1.008332239720035in"}
+<img width="241" height="151" alt="image" src="https://github.com/user-attachments/assets/09815de5-4282-4987-9ed9-6bcd89d30bb9" />
+
 
 > （Image 5: Result of Dog Breeds classification）
 >
