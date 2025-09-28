@@ -193,7 +193,7 @@
 >
 > **Justification**
 
-V.  **Conclusion**
+# Conclusion
 
 > **Free-Form Visualization**
 >
