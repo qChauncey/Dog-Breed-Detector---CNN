@@ -2,8 +2,6 @@
 title: Machine Learning Engineer Nanodegree
 ---
 
-> **Capstone Project** Chauncey Qin -- Udacity Apr 7^th^, 2022
-
 # Definition Project Overview
 
 > This project is to solve the dog breed classification problem by
